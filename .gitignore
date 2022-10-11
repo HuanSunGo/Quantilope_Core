@@ -2,3 +2,4 @@ src/reddit_api/.credentials.json
 
 src/twitter_api/.ipynb_checkpoints/*
 src/reddit_api/.ipynb_checkpoints/*
+src/reddit_analysis/reddit_api_export.csv
