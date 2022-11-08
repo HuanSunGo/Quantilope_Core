@@ -1,5 +1,7 @@
 src/reddit_api/.credentials.json
-
+.DS_Store
+src/.DS_Store
+src/reddit_analysis/.DS_Store
 src/twitter_api/.ipynb_checkpoints/*
 src/reddit_api/.ipynb_checkpoints/*
 src/reddit_analysis/reddit_api_export.csv
