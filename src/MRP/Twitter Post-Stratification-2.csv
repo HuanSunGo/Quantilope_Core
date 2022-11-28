@@ -1,0 +1,1704 @@
+Gender,Age,States,Brand,Count
+1,1,AL,Adidas,1
+1,1,AZ,Nike,2
+1,1,AZ,Puma,1
+1,1,AZ,Toms,1
+1,1,CA,Adidas,5
+1,1,CA,Converse,5
+1,1,CA,New Balance,1
+1,1,CA,Nike,16
+1,1,CA,Puma,2
+1,1,CA,Reebok,1
+1,1,CA,Toms,1
+1,1,CA,Vans,6
+1,1,CO,Converse,2
+1,1,CO,Vans,2
+1,1,CT,Nike,1
+1,1,FL,Adidas,2
+1,1,FL,Converse,1
+1,1,FL,Nike,4
+1,1,FL,Puma,2
+1,1,FL,Vans,3
+1,1,GA,Adidas,3
+1,1,GA,Converse,3
+1,1,GA,Keds,1
+1,1,GA,New Balance,1
+1,1,GA,Nike,5
+1,1,GU,Adidas,2
+1,1,GU,Nike,1
+1,1,IA,Adidas,1
+1,1,IA,Vans,1
+1,1,IL,Adidas,2
+1,1,IL,Converse,1
+1,1,IL,Nike,8
+1,1,IL,Puma,1
+1,1,IL,Vans,2
+1,1,IN,New Balance,1
+1,1,IN,Nike,2
+1,1,IN,Vans,1
+1,1,KS,Nike,2
+1,1,LA,Adidas,1
+1,1,LA,New Balance,2
+1,1,LA,Nike,2
+1,1,LA,Vans,2
+1,1,MA,Converse,1
+1,1,MA,Nike,1
+1,1,MA,Reebok,1
+1,1,MA,Vans,1
+1,1,MD,Adidas,1
+1,1,MD,New Balance,1
+1,1,MD,Puma,1
+1,1,MD,Vans,1
+1,1,ME,Converse,2
+1,1,ME,New Balance,1
+1,1,MI,Nike,1
+1,1,MN,Adidas,3
+1,1,MN,Converse,3
+1,1,MN,Nike,8
+1,1,MO,Converse,2
+1,1,MO,Nike,4
+1,1,MT,Nike,1
+1,1,NC,Adidas,2
+1,1,NC,Converse,1
+1,1,NC,Nike,3
+1,1,NC,Under Armour,1
+1,1,NC,Vans,2
+1,1,NE,Adidas,1
+1,1,NE,Converse,1
+1,1,NE,Nike,2
+1,1,NH,Puma,1
+1,1,NJ,Toms,2
+1,1,NJ,Vans,1
+1,1,NM,Adidas,2
+1,1,NY,Adidas,3
+1,1,NY,Converse,1
+1,1,NY,New Balance,1
+1,1,NY,Nike,4
+1,1,NY,Puma,1
+1,1,NY,Vans,1
+1,1,OH,Converse,1
+1,1,OH,Nike,6
+1,1,OK,Adidas,1
+1,1,OK,Converse,1
+1,1,OK,New Balance,1
+1,1,OK,Nike,2
+1,1,OK,Vans,1
+1,1,OR,Adidas,1
+1,1,OR,Nike,1
+1,1,OR,Vans,2
+1,1,PA,Converse,1
+1,1,PA,Nike,2
+1,1,RI,Nike,1
+1,1,TN,Adidas,2
+1,1,TN,Nike,1
+1,1,TX,Adidas,5
+1,1,TX,Allbirds,1
+1,1,TX,New Balance,1
+1,1,TX,Nike,17
+1,1,TX,Puma,4
+1,1,TX,Reebok,2
+1,1,TX,Toms,1
+1,1,TX,Under Armour,1
+1,1,TX,Vans,8
+1,1,VI,Vans,1
+1,1,WA,Adidas,2
+1,1,WA,Converse,1
+1,1,WA,New Balance,2
+1,1,WA,Nike,2
+1,1,WA,Puma,1
+1,1,WA,Vans,2
+1,2,AL,Converse,2
+1,2,AL,New Balance,1
+1,2,AL,Nike,8
+1,2,AR,Adidas,1
+1,2,AR,New Balance,1
+1,2,AR,Nike,4
+1,2,AZ,Adidas,1
+1,2,AZ,Converse,3
+1,2,AZ,New Balance,1
+1,2,AZ,Nike,9
+1,2,AZ,Puma,4
+1,2,AZ,Vans,4
+1,2,CA,Adidas,12
+1,2,CA,Allbirds,2
+1,2,CA,Converse,14
+1,2,CA,New Balance,9
+1,2,CA,Nike,60
+1,2,CA,Puma,6
+1,2,CA,Reebok,1
+1,2,CA,Toms,4
+1,2,CA,Under Armour,1
+1,2,CA,Vans,24
+1,2,CO,Adidas,2
+1,2,CO,Converse,4
+1,2,CO,Nike,7
+1,2,CO,Puma,1
+1,2,CO,Toms,10
+1,2,CO,Vans,4
+1,2,CT,Adidas,1
+1,2,CT,Converse,1
+1,2,CT,Nike,2
+1,2,CT,Puma,2
+1,2,CT,Toms,1
+1,2,CT,Vans,1
+1,2,DC,Adidas,2
+1,2,DC,Converse,1
+1,2,DE,New Balance,1
+1,2,DE,Nike,1
+1,2,DK,Converse,1
+1,2,FL,Adidas,10
+1,2,FL,Converse,4
+1,2,FL,Keds,1
+1,2,FL,New Balance,4
+1,2,FL,Nike,20
+1,2,FL,Puma,2
+1,2,FL,Toms,2
+1,2,FL,Under Armour,1
+1,2,FL,Vans,10
+1,2,GA,Adidas,8
+1,2,GA,Converse,5
+1,2,GA,Keds,1
+1,2,GA,New Balance,3
+1,2,GA,Nike,29
+1,2,GA,Puma,2
+1,2,GA,Under Armour,1
+1,2,GA,Vans,4
+1,2,HI,New Balance,1
+1,2,HI,Nike,3
+1,2,HI,Puma,1
+1,2,HI,Vans,1
+1,2,IA,Keds,1
+1,2,ID,Adidas,1
+1,2,ID,Nike,2
+1,2,ID,Vans,1
+1,2,IL,Adidas,3
+1,2,IL,Converse,5
+1,2,IL,Keds,1
+1,2,IL,New Balance,2
+1,2,IL,Nike,16
+1,2,IL,Puma,2
+1,2,IL,Toms,2
+1,2,IL,Vans,3
+1,2,IN,Adidas,2
+1,2,IN,Converse,2
+1,2,IN,Nike,12
+1,2,IN,Puma,2
+1,2,IN,Toms,1
+1,2,IN,Vans,2
+1,2,KS,Adidas,3
+1,2,KS,Converse,1
+1,2,KS,Nike,1
+1,2,KS,Toms,1
+1,2,KS,Vans,2
+1,2,KY,Keds,1
+1,2,KY,Nike,3
+1,2,KY,Vans,2
+1,2,LA,Adidas,3
+1,2,LA,Converse,4
+1,2,LA,New Balance,3
+1,2,LA,Nike,10
+1,2,LA,Vans,7
+1,2,MA,Adidas,4
+1,2,MA,Converse,2
+1,2,MA,New Balance,4
+1,2,MA,Nike,10
+1,2,MA,Puma,5
+1,2,MA,Toms,2
+1,2,MA,Vans,5
+1,2,MD,Converse,1
+1,2,MD,New Balance,1
+1,2,MD,Nike,7
+1,2,MD,Puma,1
+1,2,MD,Vans,4
+1,2,ME,Converse,1
+1,2,ME,Nike,2
+1,2,MI,Adidas,3
+1,2,MI,Converse,2
+1,2,MI,New Balance,1
+1,2,MI,Nike,12
+1,2,MI,Toms,2
+1,2,MI,Vans,4
+1,2,MN,Adidas,2
+1,2,MN,Allbirds,1
+1,2,MN,Converse,5
+1,2,MN,New Balance,2
+1,2,MN,Nike,7
+1,2,MN,Puma,1
+1,2,MN,Under Armour,2
+1,2,MN,Vans,6
+1,2,MO,Adidas,1
+1,2,MO,Nike,2
+1,2,MO,Puma,1
+1,2,MS,Adidas,1
+1,2,MS,Nike,3
+1,2,NC,Adidas,5
+1,2,NC,Converse,7
+1,2,NC,Keds,1
+1,2,NC,New Balance,3
+1,2,NC,Nike,16
+1,2,NC,Puma,2
+1,2,NC,Vans,8
+1,2,NE,New Balance,1
+1,2,NE,Nike,1
+1,2,NE,Vans,5
+1,2,NH,Adidas,1
+1,2,NH,Nike,1
+1,2,NH,Toms,1
+1,2,NJ,Adidas,1
+1,2,NJ,Converse,1
+1,2,NJ,New Balance,2
+1,2,NJ,Nike,6
+1,2,NJ,Toms,5
+1,2,NJ,Vans,5
+1,2,NV,Adidas,2
+1,2,NV,Converse,2
+1,2,NV,Nike,2
+1,2,NV,Puma,2
+1,2,NV,Toms,1
+1,2,NV,Vans,2
+1,2,NY,Adidas,9
+1,2,NY,Allbirds,2
+1,2,NY,Converse,10
+1,2,NY,Keds,1
+1,2,NY,New Balance,2
+1,2,NY,Nike,35
+1,2,NY,Puma,5
+1,2,NY,Reebok,2
+1,2,NY,Skechers,1
+1,2,NY,Toms,1
+1,2,NY,Under Armour,1
+1,2,NY,Vans,11
+1,2,OH,Adidas,7
+1,2,OH,New Balance,1
+1,2,OH,Nike,11
+1,2,OH,Reebok,1
+1,2,OH,Toms,9
+1,2,OH,Vans,3
+1,2,OK,Nike,8
+1,2,OK,Vans,2
+1,2,OR,Adidas,5
+1,2,OR,Converse,2
+1,2,OR,New Balance,1
+1,2,OR,Nike,13
+1,2,OR,Vans,8
+1,2,PA,Adidas,2
+1,2,PA,Converse,1
+1,2,PA,Nike,11
+1,2,PA,Reebok,1
+1,2,PA,Toms,2
+1,2,PA,Vans,4
+1,2,RI,Nike,3
+1,2,RI,Vans,1
+1,2,SC,Converse,3
+1,2,SC,Puma,1
+1,2,TN,Adidas,2
+1,2,TN,New Balance,1
+1,2,TN,Nike,5
+1,2,TN,Puma,1
+1,2,TN,Vans,3
+1,2,TX,Adidas,4
+1,2,TX,Converse,14
+1,2,TX,Keds,1
+1,2,TX,New Balance,8
+1,2,TX,Nike,55
+1,2,TX,Puma,11
+1,2,TX,Reebok,1
+1,2,TX,Toms,3
+1,2,TX,Under Armour,1
+1,2,TX,Vans,13
+1,2,UT,Nike,1
+1,2,UT,Vans,2
+1,2,VA,Adidas,2
+1,2,VA,Converse,1
+1,2,VA,Nike,4
+1,2,VA,Vans,1
+1,2,WA,Adidas,9
+1,2,WA,Converse,2
+1,2,WA,Nike,22
+1,2,WA,Toms,1
+1,2,WA,Under Armour,1
+1,2,WI,Adidas,1
+1,2,WI,Nike,3
+1,2,WI,Puma,1
+1,2,WI,Toms,1
+1,2,WI,Vans,2
+1,2,WV,Adidas,1
+1,2,WY,Vans,1
+1,3,AL,New Balance,1
+1,3,AL,Nike,4
+1,3,AL,Vans,2
+1,3,AZ,Converse,1
+1,3,AZ,New Balance,2
+1,3,AZ,Nike,4
+1,3,AZ,Vans,3
+1,3,CA,Adidas,3
+1,3,CA,Converse,5
+1,3,CA,Keds,1
+1,3,CA,New Balance,2
+1,3,CA,Nike,22
+1,3,CA,Puma,3
+1,3,CA,Reebok,1
+1,3,CA,Toms,1
+1,3,CA,Vans,17
+1,3,CO,Adidas,7
+1,3,CO,Converse,2
+1,3,CO,Nike,3
+1,3,CO,Puma,2
+1,3,CO,Vans,5
+1,3,CT,Nike,1
+1,3,CT,Puma,1
+1,3,DE,Adidas,1
+1,3,DE,Converse,1
+1,3,DE,Vans,1
+1,3,FL,Adidas,34
+1,3,FL,Allbirds,1
+1,3,FL,Converse,1
+1,3,FL,New Balance,2
+1,3,FL,Nike,52
+1,3,FL,Vans,1
+1,3,GA,Adidas,3
+1,3,GA,Allbirds,1
+1,3,GA,Converse,3
+1,3,GA,New Balance,1
+1,3,GA,Nike,11
+1,3,GA,Puma,1
+1,3,GA,Under Armour,2
+1,3,GA,Vans,3
+1,3,HI,Converse,2
+1,3,IA,New Balance,1
+1,3,ID,Nike,1
+1,3,IL,Adidas,5
+1,3,IL,Converse,5
+1,3,IL,Nike,3
+1,3,IL,Vans,4
+1,3,IN,Adidas,3
+1,3,IN,Converse,1
+1,3,IN,Nike,4
+1,3,KY,Nike,1
+1,3,LA,Nike,4
+1,3,LA,Vans,1
+1,3,MA,Converse,1
+1,3,MA,New Balance,1
+1,3,MA,Nike,10
+1,3,MA,Puma,1
+1,3,MA,Vans,3
+1,3,MD,Adidas,2
+1,3,MD,Converse,2
+1,3,MD,New Balance,3
+1,3,MD,Nike,7
+1,3,MD,Toms,2
+1,3,ME,Toms,1
+1,3,MI,Adidas,1
+1,3,MI,Allbirds,1
+1,3,MI,Converse,2
+1,3,MI,Nike,6
+1,3,MI,Vans,3
+1,3,MN,Converse,2
+1,3,MN,New Balance,1
+1,3,MN,Nike,13
+1,3,MN,Vans,1
+1,3,MO,Adidas,2
+1,3,MO,Converse,4
+1,3,MO,New Balance,1
+1,3,MO,Nike,2
+1,3,MS,Converse,1
+1,3,NC,Adidas,3
+1,3,NC,Allbirds,1
+1,3,NC,Converse,3
+1,3,NC,Nike,7
+1,3,NC,Puma,1
+1,3,NE,Nike,2
+1,3,NE,Toms,1
+1,3,NH,Adidas,1
+1,3,NJ,Adidas,1
+1,3,NJ,Converse,1
+1,3,NJ,New Balance,1
+1,3,NJ,Nike,2
+1,3,NJ,Toms,4
+1,3,NJ,Vans,1
+1,3,NV,Adidas,1
+1,3,NV,Converse,2
+1,3,NV,New Balance,1
+1,3,NV,Nike,12
+1,3,NY,Adidas,4
+1,3,NY,Allbirds,1
+1,3,NY,Converse,3
+1,3,NY,Keds,1
+1,3,NY,New Balance,5
+1,3,NY,Nike,27
+1,3,NY,Skechers,1
+1,3,NY,Toms,6
+1,3,NY,Vans,1
+1,3,OH,Adidas,5
+1,3,OH,Converse,1
+1,3,OH,New Balance,2
+1,3,OH,Nike,10
+1,3,OK,Converse,2
+1,3,OK,New Balance,1
+1,3,OK,Skechers,1
+1,3,OL,Nike,1
+1,3,OR,Adidas,1
+1,3,OR,Nike,9
+1,3,OR,Vans,1
+1,3,PA,Converse,3
+1,3,PA,New Balance,1
+1,3,PA,Nike,2
+1,3,PA,Puma,2
+1,3,PA,Skechers,1
+1,3,PA,Toms,1
+1,3,PA,Under Armour,1
+1,3,PA,Vans,2
+1,3,SC,New Balance,1
+1,3,SC,Nike,1
+1,3,TN,Converse,2
+1,3,TN,New Balance,1
+1,3,TN,Nike,7
+1,3,TX,Adidas,9
+1,3,TX,Converse,7
+1,3,TX,Keds,1
+1,3,TX,New Balance,5
+1,3,TX,Nike,31
+1,3,TX,Puma,4
+1,3,TX,Skechers,1
+1,3,TX,Vans,12
+1,3,UT,Nike,2
+1,3,VA,Adidas,1
+1,3,VA,Converse,1
+1,3,VA,Nike,3
+1,3,VT,Nike,1
+1,3,VT,Puma,1
+1,3,WA,Adidas,1
+1,3,WA,Allbirds,1
+1,3,WA,Keds,2
+1,3,WA,Nike,10
+1,3,WA,Vans,8
+1,3,WV,Nike,1
+1,4,AK,Nike,1
+1,4,AK,Vans,1
+1,4,AL,Nike,3
+1,4,AL,Under Armour,1
+1,4,AR,Converse,1
+1,4,AR,Nike,9
+1,4,AZ,Adidas,1
+1,4,AZ,Nike,2
+1,4,AZ,Puma,2
+1,4,AZ,Under Armour,1
+1,4,AZ,Vans,1
+1,4,CA,Adidas,8
+1,4,CA,Allbirds,1
+1,4,CA,Converse,6
+1,4,CA,Keds,1
+1,4,CA,New Balance,6
+1,4,CA,Nike,22
+1,4,CA,Puma,10
+1,4,CA,Vans,7
+1,4,CO,Converse,6
+1,4,CO,New Balance,2
+1,4,CO,Nike,18
+1,4,CO,Vans,1
+1,4,CT,Converse,1
+1,4,CT,New Balance,2
+1,4,DE,Nike,1
+1,4,FL,Adidas,6
+1,4,FL,Allbirds,1
+1,4,FL,Keds,1
+1,4,FL,New Balance,2
+1,4,FL,Nike,15
+1,4,FL,Puma,2
+1,4,FL,Reebok,1
+1,4,FL,Skechers,1
+1,4,FL,Toms,2
+1,4,FL,Vans,2
+1,4,GA,Adidas,3
+1,4,GA,Converse,2
+1,4,GA,New Balance,2
+1,4,GA,Nike,11
+1,4,GA,Vans,1
+1,4,GU,Vans,1
+1,4,IA,Adidas,1
+1,4,IA,Nike,3
+1,4,IA,Vans,1
+1,4,IL,Adidas,3
+1,4,IL,Nike,5
+1,4,IL,Toms,2
+1,4,IN,Adidas,4
+1,4,IN,Nike,3
+1,4,IN,Toms,1
+1,4,KS,Converse,2
+1,4,KS,Nike,1
+1,4,KY,Nike,2
+1,4,LA,Adidas,1
+1,4,LA,Converse,2
+1,4,LA,New Balance,1
+1,4,LA,Nike,1
+1,4,LA,Vans,1
+1,4,MA,Adidas,1
+1,4,MA,Converse,1
+1,4,MA,Nike,3
+1,4,MA,Skechers,1
+1,4,MD,Adidas,1
+1,4,MD,Converse,1
+1,4,MD,Under Armour,1
+1,4,MD,Vans,1
+1,4,MI,New Balance,1
+1,4,MI,Nike,2
+1,4,MI,Vans,1
+1,4,MN,Nike,4
+1,4,MN,Toms,1
+1,4,MO,Adidas,6
+1,4,MO,Converse,3
+1,4,MO,Nike,5
+1,4,MO,Reebok,1
+1,4,MO,Vans,1
+1,4,MS,Toms,1
+1,4,MS,Vans,1
+1,4,NC,Adidas,1
+1,4,NC,Converse,1
+1,4,NC,New Balance,1
+1,4,NC,Nike,2
+1,4,NC,Puma,1
+1,4,NC,Vans,4
+1,4,NE,Adidas,1
+1,4,NE,Keds,1
+1,4,NE,Nike,1
+1,4,NE,Vans,1
+1,4,NJ,Adidas,2
+1,4,NJ,Keds,1
+1,4,NJ,Nike,2
+1,4,NJ,Toms,6
+1,4,NJ,Vans,2
+1,4,NV,Converse,1
+1,4,NV,Keds,2
+1,4,NV,Puma,1
+1,4,NV,Vans,1
+1,4,NY,Adidas,4
+1,4,NY,Converse,1
+1,4,NY,Keds,1
+1,4,NY,New Balance,4
+1,4,NY,Nike,8
+1,4,NY,Puma,1
+1,4,NY,Reebok,1
+1,4,NY,Toms,1
+1,4,NY,Vans,1
+1,4,OH,Adidas,2
+1,4,OH,New Balance,2
+1,4,OH,Nike,7
+1,4,OH,Puma,1
+1,4,OH,Under Armour,1
+1,4,OH,Vans,3
+1,4,OK,Nike,1
+1,4,OK,Toms,1
+1,4,OR,Nike,3
+1,4,OR,Skechers,1
+1,4,OR,Under Armour,1
+1,4,OR,Vans,1
+1,4,PA,Adidas,4
+1,4,PA,New Balance,1
+1,4,PA,Nike,7
+1,4,PA,Vans,1
+1,4,RI,Converse,1
+1,4,RI,Vans,2
+1,4,SC,Nike,2
+1,4,TN,Converse,1
+1,4,TN,New Balance,2
+1,4,TN,Nike,3
+1,4,TN,Vans,1
+1,4,TX,Converse,11
+1,4,TX,New Balance,1
+1,4,TX,Nike,17
+1,4,TX,Vans,7
+1,4,VA,Converse,2
+1,4,VA,New Balance,1
+1,4,VA,Nike,10
+1,4,VT,Adidas,1
+1,4,VT,Vans,1
+1,4,WA,Converse,3
+1,4,WA,New Balance,2
+1,4,WA,Nike,10
+1,4,WA,Puma,2
+1,4,WA,Toms,1
+1,4,WA,Vans,3
+1,4,WI,Adidas,3
+1,4,WI,Puma,1
+1,4,WI,Vans,1
+1,4,WV,Converse,3
+1,4,WY,Converse,9
+2,1,AL,Nike,9
+2,1,AL,Reebok,1
+2,1,AR,Puma,2
+2,1,AZ,Adidas,1
+2,1,AZ,New Balance,1
+2,1,AZ,Nike,7
+2,1,AZ,Vans,1
+2,1,CA,Adidas,26
+2,1,CA,Allbirds,3
+2,1,CA,Converse,7
+2,1,CA,New Balance,3
+2,1,CA,Nike,110
+2,1,CA,Puma,3
+2,1,CA,Reebok,1
+2,1,CA,Skechers,1
+2,1,CA,Toms,4
+2,1,CA,Under Armour,2
+2,1,CA,Vans,33
+2,1,CO,Adidas,8
+2,1,CO,Nike,1
+2,1,CO,Puma,1
+2,1,CO,Vans,5
+2,1,CT,Adidas,1
+2,1,CT,Puma,1
+2,1,CT,Toms,3
+2,1,DC,Adidas,1
+2,1,DE,Converse,1
+2,1,FL,Adidas,10
+2,1,FL,Converse,2
+2,1,FL,New Balance,1
+2,1,FL,Nike,26
+2,1,FL,Puma,3
+2,1,FL,Reebok,2
+2,1,FL,Under Armour,2
+2,1,FL,Vans,5
+2,1,GA,Adidas,9
+2,1,GA,Converse,4
+2,1,GA,New Balance,2
+2,1,GA,Nike,22
+2,1,GA,Reebok,2
+2,1,GA,Under Armour,1
+2,1,HI,Converse,1
+2,1,HI,Vans,1
+2,1,IA,Vans,1
+2,1,ID,Nike,2
+2,1,IL,Adidas,5
+2,1,IL,New Balance,1
+2,1,IL,Nike,22
+2,1,IL,Puma,1
+2,1,IL,Reebok,1
+2,1,IL,Vans,5
+2,1,IN,Nike,5
+2,1,IN,Puma,2
+2,1,IN,Reebok,2
+2,1,IN,Vans,1
+2,1,KS,New Balance,1
+2,1,KS,Nike,2
+2,1,KS,Vans,1
+2,1,KY,Nike,2
+2,1,KY,Puma,1
+2,1,LA,Adidas,6
+2,1,LA,Converse,1
+2,1,LA,Nike,8
+2,1,LA,Puma,1
+2,1,MA,Adidas,4
+2,1,MA,Converse,1
+2,1,MA,New Balance,1
+2,1,MA,Nike,18
+2,1,MA,Puma,2
+2,1,MA,Reebok,1
+2,1,MA,Vans,3
+2,1,MD,Adidas,3
+2,1,MD,Converse,2
+2,1,MD,Nike,8
+2,1,MD,Under Armour,2
+2,1,MD,Vans,1
+2,1,ME,Nike,3
+2,1,ME,Under Armour,2
+2,1,MI,Adidas,2
+2,1,MI,Converse,1
+2,1,MI,New Balance,4
+2,1,MI,Nike,6
+2,1,MI,Vans,4
+2,1,MN,Adidas,1
+2,1,MN,Converse,1
+2,1,MN,New Balance,1
+2,1,MN,Nike,11
+2,1,MN,Vans,2
+2,1,MO,Nike,2
+2,1,MO,Puma,1
+2,1,MP,Nike,2
+2,1,MS,New Balance,1
+2,1,MS,Vans,2
+2,1,MT,Toms,1
+2,1,NC,Adidas,3
+2,1,NC,Converse,1
+2,1,NC,New Balance,1
+2,1,NC,Nike,10
+2,1,NC,Puma,1
+2,1,NC,Vans,4
+2,1,ND,Skechers,1
+2,1,NE,Adidas,2
+2,1,NE,Nike,37
+2,1,NE,Puma,1
+2,1,NE,Vans,1
+2,1,NH,Toms,1
+2,1,NH,Vans,1
+2,1,NJ,Adidas,5
+2,1,NJ,Converse,1
+2,1,NJ,Nike,7
+2,1,NJ,Puma,2
+2,1,NJ,Toms,7
+2,1,NM,Adidas,1
+2,1,NM,Nike,1
+2,1,NM,Puma,3
+2,1,NV,Adidas,1
+2,1,NV,Nike,2
+2,1,NV,Vans,1
+2,1,NY,Adidas,6
+2,1,NY,Converse,6
+2,1,NY,New Balance,2
+2,1,NY,Nike,30
+2,1,NY,Puma,1
+2,1,NY,Toms,1
+2,1,NY,Vans,3
+2,1,OH,Adidas,5
+2,1,OH,Converse,2
+2,1,OH,Nike,18
+2,1,OH,Puma,1
+2,1,OH,Toms,3
+2,1,OH,Vans,2
+2,1,OK,Adidas,1
+2,1,OK,New Balance,1
+2,1,OK,Nike,5
+2,1,OR,Adidas,1
+2,1,OR,Converse,3
+2,1,OR,Nike,11
+2,1,PA,Adidas,2
+2,1,PA,Nike,18
+2,1,PA,Puma,1
+2,1,PA,Reebok,1
+2,1,PA,Vans,3
+2,1,PR,Nike,1
+2,1,RI,Nike,1
+2,1,SC,Converse,1
+2,1,SC,Nike,5
+2,1,SC,Skechers,1
+2,1,SC,Toms,1
+2,1,SC,Under Armour,1
+2,1,TN,Converse,2
+2,1,TN,Nike,12
+2,1,TX,Adidas,24
+2,1,TX,Converse,9
+2,1,TX,New Balance,2
+2,1,TX,Nike,33
+2,1,TX,Puma,3
+2,1,TX,Reebok,1
+2,1,TX,Toms,11
+2,1,TX,Vans,11
+2,1,UT,Adidas,3
+2,1,VA,Adidas,1
+2,1,VA,New Balance,1
+2,1,VA,Nike,2
+2,1,VA,Reebok,1
+2,1,VA,Toms,1
+2,1,VA,Vans,1
+2,1,VI,Nike,1
+2,1,VT,Adidas,1
+2,1,VT,Nike,4
+2,1,WA,Adidas,7
+2,1,WA,Converse,1
+2,1,WA,New Balance,2
+2,1,WA,Nike,131
+2,1,WA,Puma,3
+2,1,WA,Reebok,1
+2,1,WA,Vans,3
+2,1,WI,Nike,2
+2,1,WI,Puma,2
+2,1,WV,Nike,1
+2,1,WY,Adidas,1
+2,1,WY,Converse,2
+2,1,WY,Nike,2
+2,1,WY,Reebok,4
+2,2,AK,Nike,2
+2,2,AK,Vans,3
+2,2,AL,Adidas,2
+2,2,AL,Converse,5
+2,2,AL,New Balance,6
+2,2,AL,Nike,13
+2,2,AL,Under Armour,1
+2,2,AL,Vans,2
+2,2,AR,Nike,2
+2,2,AS,Nike,1
+2,2,AZ,Adidas,11
+2,2,AZ,Converse,2
+2,2,AZ,New Balance,1
+2,2,AZ,Nike,38
+2,2,AZ,Puma,1
+2,2,AZ,Reebok,3
+2,2,AZ,Toms,1
+2,2,AZ,Vans,4
+2,2,CA,Adidas,88
+2,2,CA,Allbirds,3
+2,2,CA,Converse,17
+2,2,CA,New Balance,13
+2,2,CA,Nike,319
+2,2,CA,Puma,42
+2,2,CA,Reebok,25
+2,2,CA,Skechers,2
+2,2,CA,Toms,7
+2,2,CA,Under Armour,4
+2,2,CA,Vans,40
+2,2,CO,Adidas,17
+2,2,CO,Converse,1
+2,2,CO,New Balance,4
+2,2,CO,Nike,20
+2,2,CO,Puma,3
+2,2,CO,Toms,1
+2,2,CO,Vans,9
+2,2,CT,Adidas,9
+2,2,CT,Converse,2
+2,2,CT,New Balance,1
+2,2,CT,Nike,10
+2,2,CT,Puma,4
+2,2,CT,Toms,1
+2,2,DC,New Balance,1
+2,2,DC,Nike,1
+2,2,DE,Nike,11
+2,2,FL,Adidas,26
+2,2,FL,Converse,4
+2,2,FL,New Balance,5
+2,2,FL,Nike,105
+2,2,FL,Puma,7
+2,2,FL,Reebok,7
+2,2,FL,Toms,1
+2,2,FL,Under Armour,3
+2,2,FL,Vans,13
+2,2,GA,Adidas,29
+2,2,GA,Allbirds,1
+2,2,GA,Converse,14
+2,2,GA,New Balance,4
+2,2,GA,Nike,98
+2,2,GA,Puma,9
+2,2,GA,Reebok,5
+2,2,GA,Toms,2
+2,2,GA,Under Armour,3
+2,2,GA,Vans,9
+2,2,GU,Nike,1
+2,2,HI,Adidas,1
+2,2,HI,Nike,4
+2,2,HI,Vans,1
+2,2,IA,Adidas,1
+2,2,IA,Nike,12
+2,2,IA,Reebok,1
+2,2,IA,Vans,2
+2,2,ID,Adidas,1
+2,2,ID,New Balance,1
+2,2,ID,Nike,3
+2,2,IL,Adidas,18
+2,2,IL,Allbirds,2
+2,2,IL,Converse,5
+2,2,IL,New Balance,4
+2,2,IL,Nike,79
+2,2,IL,Puma,8
+2,2,IL,Reebok,4
+2,2,IL,Toms,1
+2,2,IL,Under Armour,2
+2,2,IL,Vans,7
+2,2,IN,Adidas,6
+2,2,IN,Converse,2
+2,2,IN,Nike,29
+2,2,IN,Toms,1
+2,2,IN,Under Armour,1
+2,2,IN,Vans,2
+2,2,KS,Adidas,1
+2,2,KS,New Balance,2
+2,2,KS,Nike,12
+2,2,KS,Toms,5
+2,2,KY,Adidas,2
+2,2,KY,Nike,4
+2,2,KY,Toms,1
+2,2,KY,Vans,3
+2,2,LA,Adidas,18
+2,2,LA,Converse,8
+2,2,LA,New Balance,4
+2,2,LA,Nike,40
+2,2,LA,Puma,6
+2,2,LA,Toms,2
+2,2,LA,Under Armour,1
+2,2,LA,Vans,5
+2,2,MA,Adidas,7
+2,2,MA,Converse,3
+2,2,MA,New Balance,3
+2,2,MA,Nike,35
+2,2,MA,Puma,5
+2,2,MA,Reebok,1
+2,2,MA,Toms,2
+2,2,MA,Vans,5
+2,2,MD,Adidas,2
+2,2,MD,Converse,1
+2,2,MD,New Balance,2
+2,2,MD,Nike,17
+2,2,MD,Puma,2
+2,2,MD,Reebok,1
+2,2,MD,Toms,1
+2,2,MD,Under Armour,2
+2,2,MD,Vans,5
+2,2,ME,Converse,1
+2,2,ME,New Balance,1
+2,2,ME,Nike,4
+2,2,MI,Adidas,21
+2,2,MI,Allbirds,2
+2,2,MI,Converse,4
+2,2,MI,New Balance,5
+2,2,MI,Nike,46
+2,2,MI,Puma,1
+2,2,MI,Reebok,1
+2,2,MI,Toms,2
+2,2,MI,Vans,4
+2,2,MN,Adidas,13
+2,2,MN,Allbirds,2
+2,2,MN,Converse,2
+2,2,MN,Nike,43
+2,2,MN,Reebok,2
+2,2,MN,Toms,1
+2,2,MN,Vans,15
+2,2,MO,Adidas,7
+2,2,MO,Converse,2
+2,2,MO,Nike,17
+2,2,MO,Skechers,1
+2,2,MS,Adidas,4
+2,2,MS,Nike,13
+2,2,MT,New Balance,2
+2,2,MT,Nike,9
+2,2,MT,Puma,1
+2,2,MT,Toms,2
+2,2,MT,Vans,2
+2,2,NC,Adidas,20
+2,2,NC,Converse,1
+2,2,NC,New Balance,2
+2,2,NC,Nike,90
+2,2,NC,Puma,1
+2,2,NC,Toms,2
+2,2,NC,Vans,6
+2,2,ND,Adidas,1
+2,2,ND,Nike,4
+2,2,ND,Puma,1
+2,2,ND,Vans,1
+2,2,NE,Adidas,5
+2,2,NE,Nike,4
+2,2,NE,Reebok,1
+2,2,NE,Vans,4
+2,2,NH,Adidas,1
+2,2,NH,Allbirds,1
+2,2,NH,New Balance,1
+2,2,NH,Puma,13
+2,2,NJ,Adidas,7
+2,2,NJ,Converse,1
+2,2,NJ,Nike,48
+2,2,NJ,Puma,1
+2,2,NJ,Reebok,1
+2,2,NJ,Skechers,1
+2,2,NJ,Toms,15
+2,2,NJ,Vans,5
+2,2,NM,Adidas,1
+2,2,NM,Converse,1
+2,2,NM,Nike,3
+2,2,NM,Puma,2
+2,2,NM,Vans,1
+2,2,NV,Adidas,4
+2,2,NV,Nike,16
+2,2,NV,Puma,8
+2,2,NV,Reebok,1
+2,2,NV,Under Armour,1
+2,2,NV,Vans,1
+2,2,NY,Adidas,42
+2,2,NY,Allbirds,3
+2,2,NY,Converse,4
+2,2,NY,Keds,1
+2,2,NY,New Balance,17
+2,2,NY,Nike,158
+2,2,NY,Puma,19
+2,2,NY,Reebok,6
+2,2,NY,Toms,3
+2,2,NY,Under Armour,1
+2,2,NY,Vans,24
+2,2,OH,Adidas,16
+2,2,OH,Converse,3
+2,2,OH,New Balance,4
+2,2,OH,Nike,64
+2,2,OH,Puma,2
+2,2,OH,Reebok,2
+2,2,OH,Under Armour,1
+2,2,OH,Vans,8
+2,2,OK,Adidas,5
+2,2,OK,Converse,2
+2,2,OK,Nike,14
+2,2,OK,Reebok,1
+2,2,OK,Vans,3
+2,2,OL,Nike,6
+2,2,OL,Reebok,1
+2,2,OL,Vans,1
+2,2,OR,Adidas,15
+2,2,OR,Converse,2
+2,2,OR,Nike,36
+2,2,OR,Puma,2
+2,2,OR,Toms,1
+2,2,PA,Adidas,30
+2,2,PA,Converse,4
+2,2,PA,Keds,1
+2,2,PA,New Balance,1
+2,2,PA,Nike,46
+2,2,PA,Puma,5
+2,2,PA,Reebok,1
+2,2,PA,Toms,2
+2,2,PA,Vans,1
+2,2,PR,Nike,1
+2,2,PR,Puma,1
+2,2,RI,Adidas,4
+2,2,RI,Nike,9
+2,2,RI,Toms,1
+2,2,SC,Adidas,5
+2,2,SC,Converse,2
+2,2,SC,New Balance,1
+2,2,SC,Nike,9
+2,2,SC,Puma,4
+2,2,SC,Toms,1
+2,2,SC,Vans,3
+2,2,SD,Nike,1
+2,2,SD,Vans,1
+2,2,TN,Adidas,6
+2,2,TN,Converse,3
+2,2,TN,New Balance,3
+2,2,TN,Nike,28
+2,2,TN,Puma,1
+2,2,TN,Toms,2
+2,2,TN,Vans,7
+2,2,TX,Adidas,47
+2,2,TX,Converse,17
+2,2,TX,New Balance,11
+2,2,TX,Nike,181
+2,2,TX,Puma,17
+2,2,TX,Reebok,3
+2,2,TX,Skechers,1
+2,2,TX,Toms,3
+2,2,TX,Under Armour,1
+2,2,TX,Vans,18
+2,2,UT,Adidas,5
+2,2,UT,Converse,1
+2,2,UT,New Balance,2
+2,2,UT,Nike,19
+2,2,UT,Skechers,1
+2,2,VA,Adidas,7
+2,2,VA,Nike,44
+2,2,VA,Toms,1
+2,2,VA,Under Armour,1
+2,2,VI,Adidas,1
+2,2,VI,Nike,2
+2,2,VT,Nike,1
+2,2,WA,Adidas,13
+2,2,WA,Allbirds,2
+2,2,WA,Converse,5
+2,2,WA,New Balance,6
+2,2,WA,Nike,38
+2,2,WA,Puma,5
+2,2,WA,Reebok,1
+2,2,WA,Toms,6
+2,2,WA,Under Armour,1
+2,2,WA,Vans,2
+2,2,WI,Adidas,5
+2,2,WI,New Balance,2
+2,2,WI,Nike,15
+2,2,WI,Puma,1
+2,2,WI,Reebok,4
+2,2,WI,Under Armour,2
+2,2,WV,Adidas,1
+2,2,WV,Nike,3
+2,3,AK,Nike,1
+2,3,AL,Adidas,3
+2,3,AL,Converse,3
+2,3,AL,Nike,3
+2,3,AL,Puma,1
+2,3,AL,Reebok,1
+2,3,AL,Vans,1
+2,3,AR,Adidas,2
+2,3,AR,Converse,1
+2,3,AR,Nike,7
+2,3,AR,Puma,5
+2,3,AZ,Adidas,7
+2,3,AZ,Keds,1
+2,3,AZ,New Balance,1
+2,3,AZ,Nike,19
+2,3,AZ,Puma,5
+2,3,AZ,Vans,2
+2,3,CA,Adidas,46
+2,3,CA,Allbirds,3
+2,3,CA,Converse,11
+2,3,CA,New Balance,12
+2,3,CA,Nike,264
+2,3,CA,Puma,7
+2,3,CA,Reebok,3
+2,3,CA,Toms,2
+2,3,CA,Under Armour,3
+2,3,CA,Vans,29
+2,3,CO,Adidas,8
+2,3,CO,Converse,2
+2,3,CO,New Balance,6
+2,3,CO,Nike,17
+2,3,CO,Vans,5
+2,3,CT,Adidas,1
+2,3,CT,Converse,1
+2,3,CT,Nike,14
+2,3,CT,Under Armour,1
+2,3,CT,Vans,1
+2,3,DC,Nike,1
+2,3,DE,Adidas,1
+2,3,DE,Nike,14
+2,3,FL,Adidas,12
+2,3,FL,Converse,2
+2,3,FL,New Balance,2
+2,3,FL,Nike,75
+2,3,FL,Puma,10
+2,3,FL,Reebok,1
+2,3,FL,Skechers,1
+2,3,FL,Toms,2
+2,3,FL,Vans,11
+2,3,GA,Adidas,14
+2,3,GA,Converse,3
+2,3,GA,New Balance,3
+2,3,GA,Nike,73
+2,3,GA,Puma,1
+2,3,GA,Reebok,1
+2,3,GA,Skechers,1
+2,3,GA,Toms,1
+2,3,GA,Vans,1
+2,3,HI,Adidas,4
+2,3,HI,Nike,3
+2,3,HI,Toms,1
+2,3,IA,Nike,4
+2,3,ID,Nike,3
+2,3,ID,Vans,1
+2,3,IL,Adidas,8
+2,3,IL,Converse,3
+2,3,IL,New Balance,4
+2,3,IL,Nike,35
+2,3,IL,Puma,1
+2,3,IL,Toms,2
+2,3,IL,Under Armour,1
+2,3,IL,Vans,7
+2,3,IN,Adidas,1
+2,3,IN,Converse,1
+2,3,IN,Nike,12
+2,3,IN,Puma,1
+2,3,IN,Skechers,1
+2,3,IN,Vans,5
+2,3,KS,Adidas,2
+2,3,KS,Nike,11
+2,3,KS,Toms,1
+2,3,KS,Vans,2
+2,3,KY,Adidas,1
+2,3,KY,New Balance,1
+2,3,KY,Nike,10
+2,3,KY,Vans,2
+2,3,LA,Adidas,2
+2,3,LA,Converse,3
+2,3,LA,New Balance,1
+2,3,LA,Nike,18
+2,3,LA,Toms,5
+2,3,LA,Vans,2
+2,3,MA,Adidas,9
+2,3,MA,Converse,1
+2,3,MA,New Balance,1
+2,3,MA,Nike,13
+2,3,MA,Reebok,5
+2,3,MA,Under Armour,2
+2,3,MA,Vans,2
+2,3,MD,Adidas,8
+2,3,MD,Converse,1
+2,3,MD,New Balance,1
+2,3,MD,Nike,31
+2,3,MD,Reebok,1
+2,3,MD,Under Armour,1
+2,3,MD,Vans,2
+2,3,ME,Adidas,8
+2,3,ME,New Balance,2
+2,3,ME,Nike,3
+2,3,MI,Adidas,9
+2,3,MI,Converse,1
+2,3,MI,New Balance,2
+2,3,MI,Nike,47
+2,3,MI,Toms,1
+2,3,MI,Vans,1
+2,3,MN,Adidas,5
+2,3,MN,Allbirds,2
+2,3,MN,Converse,2
+2,3,MN,Nike,20
+2,3,MN,Puma,1
+2,3,MN,Reebok,1
+2,3,MN,Toms,1
+2,3,MN,Vans,4
+2,3,MO,Converse,2
+2,3,MO,Nike,9
+2,3,MO,Reebok,1
+2,3,MO,Under Armour,3
+2,3,MO,Vans,1
+2,3,MS,Adidas,3
+2,3,MS,Nike,4
+2,3,MT,Adidas,1
+2,3,MT,Nike,2
+2,3,MT,Vans,1
+2,3,NC,Adidas,13
+2,3,NC,Converse,3
+2,3,NC,New Balance,2
+2,3,NC,Nike,21
+2,3,NC,Puma,3
+2,3,NC,Reebok,2
+2,3,NC,Toms,2
+2,3,NC,Under Armour,1
+2,3,NC,Vans,4
+2,3,NE,Adidas,4
+2,3,NE,New Balance,1
+2,3,NE,Nike,11
+2,3,NE,Skechers,1
+2,3,NE,Under Armour,4
+2,3,NH,Nike,2
+2,3,NH,Vans,1
+2,3,NJ,Adidas,6
+2,3,NJ,Converse,3
+2,3,NJ,New Balance,4
+2,3,NJ,Nike,17
+2,3,NJ,Puma,2
+2,3,NJ,Toms,33
+2,3,NJ,Under Armour,1
+2,3,NJ,Vans,3
+2,3,NM,Converse,2
+2,3,NM,Nike,11
+2,3,NM,Vans,2
+2,3,NV,Adidas,3
+2,3,NV,New Balance,1
+2,3,NV,Nike,14
+2,3,NV,Reebok,1
+2,3,NY,Adidas,22
+2,3,NY,Allbirds,1
+2,3,NY,Converse,4
+2,3,NY,New Balance,4
+2,3,NY,Nike,67
+2,3,NY,Puma,8
+2,3,NY,Reebok,1
+2,3,NY,Skechers,1
+2,3,NY,Toms,5
+2,3,NY,Under Armour,3
+2,3,NY,Vans,10
+2,3,OH,Adidas,30
+2,3,OH,Converse,2
+2,3,OH,New Balance,1
+2,3,OH,Nike,75
+2,3,OH,Puma,2
+2,3,OH,Reebok,5
+2,3,OH,Toms,3
+2,3,OH,Under Armour,2
+2,3,OH,Vans,3
+2,3,OK,New Balance,1
+2,3,OK,Nike,6
+2,3,OK,Reebok,1
+2,3,OK,Toms,1
+2,3,OK,Vans,1
+2,3,OR,Adidas,9
+2,3,OR,Nike,51
+2,3,OR,Puma,2
+2,3,OR,Under Armour,2
+2,3,OR,Vans,3
+2,3,PA,Adidas,3
+2,3,PA,Converse,4
+2,3,PA,New Balance,1
+2,3,PA,Nike,40
+2,3,PA,Reebok,3
+2,3,PA,Toms,3
+2,3,PA,Under Armour,2
+2,3,PA,Vans,5
+2,3,PR,Toms,1
+2,3,RI,Adidas,1
+2,3,RI,Nike,3
+2,3,RI,Vans,1
+2,3,SC,Adidas,3
+2,3,SC,Allbirds,1
+2,3,SC,Converse,1
+2,3,SC,New Balance,2
+2,3,SC,Nike,22
+2,3,SC,Puma,1
+2,3,SC,Under Armour,1
+2,3,SC,Vans,2
+2,3,SD,Nike,6
+2,3,TN,Adidas,4
+2,3,TN,New Balance,1
+2,3,TN,Nike,31
+2,3,TN,Puma,7
+2,3,TN,Vans,4
+2,3,TX,Adidas,42
+2,3,TX,Allbirds,1
+2,3,TX,Converse,19
+2,3,TX,New Balance,9
+2,3,TX,Nike,146
+2,3,TX,Puma,9
+2,3,TX,Reebok,3
+2,3,TX,Toms,3
+2,3,TX,Under Armour,4
+2,3,TX,Vans,20
+2,3,UT,Allbirds,1
+2,3,UT,New Balance,1
+2,3,UT,Nike,6
+2,3,UT,Skechers,1
+2,3,UT,Vans,1
+2,3,VA,Adidas,9
+2,3,VA,Converse,3
+2,3,VA,New Balance,2
+2,3,VA,Nike,15
+2,3,VA,Puma,1
+2,3,VA,Reebok,2
+2,3,VA,Toms,1
+2,3,VT,Converse,1
+2,3,WA,Adidas,9
+2,3,WA,Allbirds,3
+2,3,WA,Converse,4
+2,3,WA,New Balance,5
+2,3,WA,Nike,57
+2,3,WA,Puma,3
+2,3,WA,Reebok,1
+2,3,WA,Toms,1
+2,3,WA,Under Armour,1
+2,3,WA,Vans,7
+2,3,WI,Adidas,5
+2,3,WI,Allbirds,3
+2,3,WI,Nike,37
+2,3,WI,Puma,1
+2,3,WI,Vans,1
+2,3,WV,Adidas,3
+2,4,AL,Adidas,2
+2,4,AL,New Balance,2
+2,4,AL,Nike,7
+2,4,AL,Puma,1
+2,4,AL,Toms,1
+2,4,AL,Vans,1
+2,4,AR,Allbirds,1
+2,4,AR,Converse,1
+2,4,AR,New Balance,1
+2,4,AR,Nike,12
+2,4,AR,Reebok,1
+2,4,AR,Vans,2
+2,4,AZ,Adidas,12
+2,4,AZ,Converse,4
+2,4,AZ,New Balance,1
+2,4,AZ,Nike,33
+2,4,AZ,Puma,18
+2,4,AZ,Reebok,1
+2,4,AZ,Toms,1
+2,4,AZ,Under Armour,1
+2,4,AZ,Vans,8
+2,4,CA,Adidas,39
+2,4,CA,Allbirds,1
+2,4,CA,Converse,10
+2,4,CA,New Balance,9
+2,4,CA,Nike,178
+2,4,CA,Puma,29
+2,4,CA,Reebok,2
+2,4,CA,Toms,10
+2,4,CA,Vans,35
+2,4,CO,Adidas,8
+2,4,CO,Allbirds,1
+2,4,CO,Converse,5
+2,4,CO,New Balance,1
+2,4,CO,Nike,11
+2,4,CO,Puma,3
+2,4,CO,Reebok,1
+2,4,CO,Under Armour,1
+2,4,CO,Vans,5
+2,4,CT,Adidas,2
+2,4,CT,Converse,1
+2,4,CT,New Balance,2
+2,4,CT,Nike,2
+2,4,CT,Reebok,1
+2,4,CT,Skechers,2
+2,4,CT,Vans,1
+2,4,DC,New Balance,1
+2,4,DC,Nike,4
+2,4,DE,Converse,1
+2,4,DE,Nike,1
+2,4,FL,Adidas,32
+2,4,FL,Converse,13
+2,4,FL,New Balance,18
+2,4,FL,Nike,70
+2,4,FL,Puma,10
+2,4,FL,Reebok,1
+2,4,FL,Toms,3
+2,4,FL,Vans,18
+2,4,GA,Adidas,7
+2,4,GA,Allbirds,1
+2,4,GA,Converse,3
+2,4,GA,New Balance,7
+2,4,GA,Nike,43
+2,4,GA,Puma,4
+2,4,GA,Reebok,2
+2,4,GA,Under Armour,2
+2,4,GA,Vans,6
+2,4,HI,Puma,1
+2,4,HI,Toms,1
+2,4,HI,Vans,1
+2,4,IA,Converse,1
+2,4,IA,Nike,7
+2,4,IA,Puma,3
+2,4,IA,Vans,2
+2,4,ID,Nike,5
+2,4,ID,Puma,1
+2,4,ID,Toms,1
+2,4,IL,Adidas,12
+2,4,IL,Allbirds,1
+2,4,IL,Converse,3
+2,4,IL,New Balance,7
+2,4,IL,Nike,61
+2,4,IL,Puma,7
+2,4,IL,Skechers,2
+2,4,IL,Toms,3
+2,4,IL,Vans,6
+2,4,IN,Adidas,3
+2,4,IN,Converse,3
+2,4,IN,New Balance,2
+2,4,IN,Nike,40
+2,4,IN,Vans,2
+2,4,KS,Adidas,5
+2,4,KS,New Balance,1
+2,4,KS,Nike,10
+2,4,KS,Vans,3
+2,4,KY,Adidas,1
+2,4,KY,Converse,1
+2,4,KY,New Balance,1
+2,4,KY,Nike,11
+2,4,KY,Puma,2
+2,4,KY,Under Armour,4
+2,4,LA,Adidas,9
+2,4,LA,Converse,6
+2,4,LA,New Balance,1
+2,4,LA,Nike,18
+2,4,LA,Reebok,1
+2,4,LA,Toms,1
+2,4,LA,Vans,2
+2,4,MA,Adidas,8
+2,4,MA,Converse,4
+2,4,MA,New Balance,6
+2,4,MA,Nike,31
+2,4,MA,Puma,3
+2,4,MA,Reebok,2
+2,4,MA,Under Armour,2
+2,4,MA,Vans,9
+2,4,MD,Adidas,2
+2,4,MD,New Balance,3
+2,4,MD,Nike,11
+2,4,MD,Puma,6
+2,4,MD,Toms,1
+2,4,MD,Under Armour,3
+2,4,MD,Vans,6
+2,4,ME,Adidas,3
+2,4,ME,New Balance,3
+2,4,ME,Nike,17
+2,4,ME,Under Armour,3
+2,4,MI,Adidas,5
+2,4,MI,Converse,2
+2,4,MI,New Balance,6
+2,4,MI,Nike,33
+2,4,MI,Puma,7
+2,4,MI,Skechers,1
+2,4,MI,Toms,1
+2,4,MI,Vans,5
+2,4,MN,Adidas,15
+2,4,MN,Allbirds,2
+2,4,MN,Converse,6
+2,4,MN,New Balance,2
+2,4,MN,Nike,40
+2,4,MN,Reebok,2
+2,4,MN,Skechers,2
+2,4,MN,Toms,5
+2,4,MN,Under Armour,2
+2,4,MN,Vans,5
+2,4,MO,Adidas,1
+2,4,MO,Converse,2
+2,4,MO,New Balance,4
+2,4,MO,Nike,6
+2,4,MO,Under Armour,1
+2,4,MO,Vans,2
+2,4,MS,Adidas,2
+2,4,MS,Converse,2
+2,4,MS,Nike,13
+2,4,MS,Under Armour,1
+2,4,MT,Adidas,1
+2,4,MT,New Balance,1
+2,4,MT,Nike,5
+2,4,MT,Under Armour,1
+2,4,NC,Adidas,11
+2,4,NC,Allbirds,3
+2,4,NC,Converse,16
+2,4,NC,Nike,30
+2,4,NC,Puma,3
+2,4,NC,Reebok,2
+2,4,NC,Toms,1
+2,4,NC,Vans,1
+2,4,NE,Adidas,1
+2,4,NE,Converse,2
+2,4,NE,New Balance,1
+2,4,NE,Nike,6
+2,4,NE,Reebok,1
+2,4,NE,Toms,2
+2,4,NE,Vans,2
+2,4,NH,New Balance,2
+2,4,NH,Nike,42
+2,4,NH,Under Armour,1
+2,4,NH,Vans,1
+2,4,NJ,Adidas,7
+2,4,NJ,Converse,3
+2,4,NJ,New Balance,6
+2,4,NJ,Nike,48
+2,4,NJ,Puma,3
+2,4,NJ,Skechers,1
+2,4,NJ,Toms,24
+2,4,NJ,Under Armour,1
+2,4,NJ,Vans,3
+2,4,NM,Adidas,1
+2,4,NM,New Balance,1
+2,4,NM,Nike,16
+2,4,NM,Puma,1
+2,4,NM,Vans,1
+2,4,NV,Nike,9
+2,4,NV,Puma,1
+2,4,NV,Reebok,1
+2,4,NV,Toms,2
+2,4,NV,Vans,3
+2,4,NY,Adidas,16
+2,4,NY,Allbirds,2
+2,4,NY,Converse,12
+2,4,NY,New Balance,11
+2,4,NY,Nike,80
+2,4,NY,Puma,6
+2,4,NY,Reebok,2
+2,4,NY,Skechers,2
+2,4,NY,Toms,143
+2,4,NY,Under Armour,1
+2,4,NY,Vans,13
+2,4,OH,Adidas,12
+2,4,OH,Converse,3
+2,4,OH,Keds,1
+2,4,OH,New Balance,5
+2,4,OH,Nike,44
+2,4,OH,Reebok,2
+2,4,OH,Skechers,4
+2,4,OH,Toms,1
+2,4,OH,Under Armour,1
+2,4,OH,Vans,7
+2,4,OK,Adidas,5
+2,4,OK,Converse,1
+2,4,OK,Nike,6
+2,4,OK,Vans,2
+2,4,OR,Adidas,9
+2,4,OR,Converse,2
+2,4,OR,New Balance,2
+2,4,OR,Nike,25
+2,4,OR,Puma,1
+2,4,OR,Vans,3
+2,4,PA,Adidas,8
+2,4,PA,Converse,5
+2,4,PA,Keds,2
+2,4,PA,New Balance,1
+2,4,PA,Nike,32
+2,4,PA,Puma,3
+2,4,PA,Reebok,1
+2,4,PA,Skechers,1
+2,4,PA,Toms,6
+2,4,PA,Under Armour,2
+2,4,PA,Vans,6
+2,4,RI,Adidas,3
+2,4,RI,Converse,1
+2,4,RI,New Balance,2
+2,4,RI,Nike,4
+2,4,RI,Reebok,1
+2,4,RI,Under Armour,1
+2,4,SC,Adidas,3
+2,4,SC,Converse,11
+2,4,SC,New Balance,1
+2,4,SC,Nike,10
+2,4,SC,Vans,5
+2,4,SD,Vans,1
+2,4,TN,Adidas,1
+2,4,TN,Converse,5
+2,4,TN,New Balance,1
+2,4,TN,Nike,15
+2,4,TN,Puma,3
+2,4,TN,Reebok,1
+2,4,TN,Toms,2
+2,4,TN,Under Armour,5
+2,4,TN,Vans,4
+2,4,TX,Adidas,56
+2,4,TX,Converse,27
+2,4,TX,Keds,1
+2,4,TX,New Balance,5
+2,4,TX,Nike,99
+2,4,TX,Puma,11
+2,4,TX,Reebok,6
+2,4,TX,Toms,8
+2,4,TX,Under Armour,3
+2,4,TX,Vans,32
+2,4,UT,Adidas,8
+2,4,UT,Converse,9
+2,4,UT,New Balance,1
+2,4,UT,Nike,36
+2,4,UT,Puma,3
+2,4,UT,Reebok,1
+2,4,UT,Toms,1
+2,4,UT,Under Armour,1
+2,4,UT,Vans,9
+2,4,VA,Adidas,1
+2,4,VA,Allbirds,1
+2,4,VA,Converse,1
+2,4,VA,New Balance,5
+2,4,VA,Nike,28
+2,4,VA,Puma,1
+2,4,VA,Vans,2
+2,4,VT,Nike,5
+2,4,VT,Vans,2
+2,4,WA,Adidas,10
+2,4,WA,Converse,4
+2,4,WA,Keds,1
+2,4,WA,New Balance,4
+2,4,WA,Nike,32
+2,4,WA,Puma,4
+2,4,WA,Reebok,1
+2,4,WA,Toms,4
+2,4,WA,Under Armour,2
+2,4,WA,Vans,4
+2,4,WI,Adidas,4
+2,4,WI,Allbirds,1
+2,4,WI,Converse,2
+2,4,WI,Nike,9
+2,4,WI,Puma,8
+2,4,WI,Toms,1
+2,4,WI,Under Armour,1
+2,4,WI,Vans,3
+2,4,WV,Nike,1
+2,4,WY,Reebok,1
+3,1,CA,Converse,1
+3,1,CA,Skechers,1
+3,1,IL,Nike,1
+3,1,IL,Reebok,1
+3,1,MN,Adidas,1
+3,1,MS,Nike,1
+3,1,TX,Nike,1
+3,2,CA,Nike,1
+3,2,FL,New Balance,1
+3,2,GA,Converse,2
+3,2,MA,Nike,1
+3,2,MA,Puma,1
+3,2,MD,Nike,1
+3,2,MI,Vans,1
+3,2,MN,Converse,1
+3,2,NC,Adidas,1
+3,2,NE,Nike,1
+3,2,NJ,Converse,1
+3,2,NY,Adidas,1
+3,2,NY,Nike,1
+3,2,NY,Vans,1
+3,2,WA,Nike,1
+3,2,WA,Toms,3
+3,3,CA,Converse,1
+3,3,GA,Nike,1
+3,3,IL,Adidas,2
+3,3,MD,Vans,1
+3,3,PA,Vans,1
+3,4,CA,Adidas,1
+3,4,CA,Skechers,1
+3,4,GA,Converse,1
+3,4,KS,Converse,1
+3,4,ME,New Balance,1
+3,4,NM,Converse,1
+3,4,VA,Nike,1

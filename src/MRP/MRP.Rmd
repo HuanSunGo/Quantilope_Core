@@ -1,0 +1,180 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+
+```{r}
+Nike_survey = read.csv("Nike Cleaned Survey.csv")
+Nike = Nike_survey[!is.na(Nike_survey$OA_Sentiment),]
+
+```
+
+```{r}
+summary(Nike)
+```
+```{r}
+Twitter_df = read.csv("Twitter.csv")
+summary(Twitter_df)
+```
+
+```{r}
+keep = c("gender_m3","age_m3","state","brand")
+twitter = Twitter_df[keep]
+```
+
+```{r}
+summary(twitter)
+```
+```{r}
+twitter[!is.na(twitter$state),]
+```
+```{r}
+unique(twitter$age_m3)
+```
+
+```{r}
+library(dplyr)
+Nike<- Nike%>% 
+       mutate(Age = case_when((Age >= 0 & Age <= 18) ~ 1,
+                                         (Age >= 19 & Age <= 29) ~ 2,
+                                         (Age >= 30 & Age <= 39) ~ 3,
+                                         (Age >= 40 ) ~ 4,
+                                          TRUE ~ 0)) 
+```
+```{r}
+twitter<- twitter%>% 
+       mutate(age = case_when((age_m3 == "<=18") ~ 1,
+                                         (age_m3 == "19-29") ~ 2,
+                                         (age_m3 == "30-39") ~ 3,
+                                         (age_m3 == ">=40" ) ~ 4,
+                                          TRUE ~ 0)) 
+```
+
+```{r}
+unique(twitter$gender_m3)
+```
+
+
+```{r}
+twitter<- twitter%>% 
+       mutate( gender_m3= case_when((gender_m3 == "male") ~ 2,
+                                         (gender_m3 == "female") ~ 1,
+                                         (gender_m3 == "NB") ~ 3,
+                                          TRUE ~ 0)) 
+```
+
+```{r}
+write.csv(twitter,"/Users/davidliang/Downloads/Twitter_Ready_Post.csv", row.names = FALSE)
+```
+
+```{r}
+Nike<- Nike%>% 
+       mutate(States = case_when((States == 1) ~ "AL",
+                                  (States == 2) ~ "AK",(States == 3) ~ "AZ",
+                                  (States == 4) ~ "AR",
+                                  (States == 5) ~ "CA",
+                                  (States == 6 ) ~ "CO",
+                                  (States == 7 ) ~ "CT",
+                                  (States == 8 ) ~ "DE",
+                                  (States == 9 ) ~ "DC",
+                                  (States == 10 ) ~ "FL",
+                                  (States == 11 ) ~ "GA",
+                                  (States == 12 ) ~ "HI",
+                                  (States == 13 ) ~ "ID",
+                                  (States == 14 ) ~ "IL",
+                                  (States == 15 ) ~ "IN",
+                                  (States == 16 ) ~ "IA",
+                                  (States == 17 ) ~ "KS",
+                                  (States == 18 ) ~ "KY",
+                                  (States == 19 ) ~ "LA",
+                                  (States == 20 ) ~ "ME",
+                                  (States == 21 ) ~ "MD",
+                                  (States == 22 ) ~ "MA",
+                                  (States == 23 ) ~ "MI",
+                                  (States == 24 ) ~ "MN",
+                                  (States == 25 ) ~ "MS",
+                                  (States == 26 ) ~ "MO",
+                                  (States == 27 ) ~ "MT",
+                                  (States == 28 ) ~ "NE",
+                                  (States == 29 ) ~ "NV",
+                                  (States == 30 ) ~ "NH",
+                                  (States == 31 ) ~ "NJ",
+                                  (States == 32 ) ~ "NM",
+                                  (States == 33 ) ~ "NY",
+                                  (States == 34 ) ~ "NC",
+                                  (States == 35 ) ~ "ND",
+                                  (States == 36 ) ~ "OH",
+                                  (States == 37 ) ~ "OK",
+                                  (States == 38 ) ~ "OR",
+                                  (States == 39 ) ~ "PA",
+                                  (States == 40 ) ~ "RI",
+                                  (States == 41 ) ~ "SC",
+                                  (States == 42 ) ~ "SD",
+                                  (States == 43 ) ~ "TN",
+                                  (States == 44 ) ~ "TX",
+                                  (States == 45 ) ~ "UT",
+                                  (States == 46 ) ~ "VT",
+                                  (States == 47 ) ~ "VA",
+                                  (States == 48 ) ~ "WA",
+                                  (States == 49 ) ~ "WV",
+                                  (States == 50 ) ~ "WI",
+                                  (States == 51 ) ~ "WY"))
+```
+
+```{r}
+write.csv(twitter,"/Users/davidliang/Downloads/Nike_States_Named", row.names = FALSE)
+```
+
+```{r}
+t_keep = c("Age","Gender","States","BrandPreference")
+nike_final = Nike[t_keep]
+
+```
+
+```{r}
+library(lme4)
+reg2 <- glmer(BrandPreference ~ Gender + Age + (1|States),nAGQ=0,
+                family=binomial(link="logit"),data=nike_final)
+summary(reg2)
+```
+
+```{r}
+twitter_post = read.csv("Twitter Post-Stratification-2.csv")
+```
+
+```{r}
+counting = twitter_post%>%
+  group_by(States)%>%
+  summarize(total = sum(Count))
+```
+
+```{r}
+counting
+```
+```{r}
+twitter_final = left_join(twitter_post, counting, by = ("States" = "States"))
+```
+
+
+```{r}
+twitter_final = twitter_final %>%
+  mutate(Percentage = Count/total)
+```
+
+```{r}
+#Post-Strat
+# 1. Predict
+twitter_final$Prediction <- predict(reg2,newdata=twitter_final,type="response",allow.new.levels=TRUE)
+
+# 2. Weight
+twitter_final$Weight.Pred <- twitter_final$Prediction*twitter_final$Percentage*100
+
+# 3. Post-stratify
+results <- data.table(twitter_final)[ , .(Estimate = sum(Weight.Pred)), by = .(States)]
+results
+```
+
