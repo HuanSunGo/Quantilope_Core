@@ -1,0 +1,804 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code. 
+
+Try executing this chunk by clicking the *Run* button within the chunk or by placing your cursor inside it and pressing *Cmd+Shift+Enter*. 
+```{r}
+#Loading Lib
+library(data.table)
+library(dplyr)
+library(datasets)
+library(usmap)
+library(ggplot2)
+library(lme4)
+```
+
+```{r}
+#Loading Twitter dataset
+og_twitter = read.csv("TwitterRoberta.csv")
+
+```
+
+```{r}
+summary(og_twitter)
+```
+
+```{r}
+#keeping key columns
+keep = c("roberta_pos","age_m3","state","brand","region","gender_m3")
+twitter = og_twitter[keep]
+```
+
+```{r}
+summary(twitter)
+```
+```{r}
+#renaming columns
+twitter = twitter %>%
+  rename(age = age_m3,
+         gender = gender_m3)
+```
+
+```{r}
+#removing NA rows in region
+twitter = twitter[!is.na(twitter$region),]
+```
+
+```{r}
+#Checking age category for wrangling
+unique(twitter$age)
+```
+
+```{r}
+#checking out region category for wrangling
+unique(twitter$Region)
+```
+
+
+```{r}
+#recoding age category in Twitter data
+twitter= twitter%>% 
+       mutate(age = case_when((age == "<=18") ~ 1,
+                                         (age == "19-29") ~ 2,
+                                         (age == "30-39") ~ 3,
+                                         (age == ">=40" ) ~ 4,
+                                          TRUE ~ 0)) 
+```
+
+```{r}
+#renaming columns
+twitter= twitter%>% 
+      rename(Age = age,
+             Pos = roberta_pos,
+             Gender = gender,
+             States = state,
+             Brand = brand,
+             Region = region)
+```
+
+
+```{r}
+#checking gender variable
+unique(twitter$Gender)
+```
+
+
+```{r}
+#recoding gender category in Twitter data
+twitter= twitter%>% 
+       mutate( Gender= case_when((Gender == "male") ~ 2,
+                                         (Gender == "female") ~ 1,
+                                         (Gender == "NB") ~ 3,
+                                          TRUE ~ 0)) 
+```
+
+```{r}
+#Spliting twitter dataset for each brand
+#Nike
+twitter_Nike = twitter[twitter$Brand == 'Nike', ]
+#Adidas
+twitter_Adidas = twitter[twitter$Brand == 'Adidas', ]
+#New Balance
+twitter_NB = twitter[twitter$Brand == 'New Balance', ]
+#Converse
+twitter_Converse = twitter[twitter$Brand == 'Converse', ]
+#Reebok
+twitter_Reebok = twitter[twitter$Brand == 'Reebok', ]
+```
+
+```{r}
+
+```
+
+```{r}
+#write.csv(twitter,"/Users/davidliang/Downloads/Twitter_Ready_Post_1.csv", row.names = FALSE)
+```
+
+```{r}
+#Reading in survey data sets for wrangling
+Nike = read_csv("Nike.csv",show_col_types = FALSE)
+Adidas = read_csv("Adias.csv",show_col_types = FALSE)
+NB = read_csv("New Balance.csv",show_col_types = FALSE)
+Converse = read_csv("Converse.csv",show_col_types = FALSE)
+Reebok = read_csv("Reebok.csv",show_col_types = FALSE)
+```
+
+```{r}
+#Renaming columns
+#Nike
+Nike = Nike %>%
+  rename(Age = Q1,
+         Gender = Q2,
+         States = Q3,
+         Region = region)
+#Adidas
+Adidas = Adidas %>%
+  rename(Age = Q1,
+         Gender = Q2,
+         States = Q3,
+         Region = region)
+#New Balance
+NB = NB %>%
+  rename(Age = Q1,
+         Gender = Q2,
+         States = Q3,
+         Region = region)
+#Converse
+Converse = Converse %>%
+  rename(Age = Q1,
+         Gender = Q2,
+         States = Q3,
+         Region = region)
+#Reebok
+Reebok = Reebok %>%
+  rename(Age = Q1,
+         Gender = Q2,
+         States = Q3,
+         Region = region)
+```
+
+```{r}
+#Data Wrangling for Nike Survey Data
+#Encoding states to 2 letters
+library(dplyr)
+Nike= Nike%>% 
+       mutate(States = case_when((States == 1) ~ "AL",
+                                  (States == 2) ~ "AK",(States == 3) ~ "AZ",
+                                  (States == 4) ~ "AR",
+                                  (States == 5) ~ "CA",
+                                  (States == 6 ) ~ "CO",
+                                  (States == 7 ) ~ "CT",
+                                  (States == 8 ) ~ "DE",
+                                  (States == 9 ) ~ "DC",
+                                  (States == 10 ) ~ "FL",
+                                  (States == 11 ) ~ "GA",
+                                  (States == 12 ) ~ "HI",
+                                  (States == 13 ) ~ "ID",
+                                  (States == 14 ) ~ "IL",
+                                  (States == 15 ) ~ "IN",
+                                  (States == 16 ) ~ "IA",
+                                  (States == 17 ) ~ "KS",
+                                  (States == 18 ) ~ "KY",
+                                  (States == 19 ) ~ "LA",
+                                  (States == 20 ) ~ "ME",
+                                  (States == 21 ) ~ "MD",
+                                  (States == 22 ) ~ "MA",
+                                  (States == 23 ) ~ "MI",
+                                  (States == 24 ) ~ "MN",
+                                  (States == 25 ) ~ "MS",
+                                  (States == 26 ) ~ "MO",
+                                  (States == 27 ) ~ "MT",
+                                  (States == 28 ) ~ "NE",
+                                  (States == 29 ) ~ "NV",
+                                  (States == 30 ) ~ "NH",
+                                  (States == 31 ) ~ "NJ",
+                                  (States == 32 ) ~ "NM",
+                                  (States == 33 ) ~ "NY",
+                                  (States == 34 ) ~ "NC",
+                                  (States == 35 ) ~ "ND",
+                                  (States == 36 ) ~ "OH",
+                                  (States == 37 ) ~ "OK",
+                                  (States == 38 ) ~ "OR",
+                                  (States == 39 ) ~ "PA",
+                                  (States == 40 ) ~ "RI",
+                                  (States == 41 ) ~ "SC",
+                                  (States == 42 ) ~ "SD",
+                                  (States == 43 ) ~ "TN",
+                                  (States == 44 ) ~ "TX",
+                                  (States == 45 ) ~ "UT",
+                                  (States == 46 ) ~ "VT",
+                                  (States == 47 ) ~ "VA",
+                                  (States == 48 ) ~ "WA",
+                                  (States == 49 ) ~ "WV",
+                                  (States == 50 ) ~ "WI",
+                                  (States == 51 ) ~ "WY"))
+
+#Wrangling to put age into category
+Nike= Nike%>% 
+       mutate(Age = case_when((Age >= 0 & Age <= 18) ~ 1,
+                                         (Age >= 19 & Age <= 29) ~ 2,
+                                         (Age >= 30 & Age <= 39) ~ 3,
+                                         (Age >= 40 ) ~ 4,
+                                          TRUE ~ 0)) 
+
+#Encoding region
+Nike= Nike%>% 
+       mutate(Region = case_when((Region == 1)~"Northeast",
+                                 (Region == 2)~"Midwsest",
+                                (Region == 3)~"South",
+                                (Region == 4)~"West",
+                                TRUE ~ "Other"))
+```
+
+```{r}
+#Data Wrangling for Adidas Survey Data
+#Encoding states to 2 letters
+Adidas= Adidas%>% 
+       mutate(States = case_when((States == 1) ~ "AL",
+                                  (States == 2) ~ "AK",(States == 3) ~ "AZ",
+                                  (States == 4) ~ "AR",
+                                  (States == 5) ~ "CA",
+                                  (States == 6 ) ~ "CO",
+                                  (States == 7 ) ~ "CT",
+                                  (States == 8 ) ~ "DE",
+                                  (States == 9 ) ~ "DC",
+                                  (States == 10 ) ~ "FL",
+                                  (States == 11 ) ~ "GA",
+                                  (States == 12 ) ~ "HI",
+                                  (States == 13 ) ~ "ID",
+                                  (States == 14 ) ~ "IL",
+                                  (States == 15 ) ~ "IN",
+                                  (States == 16 ) ~ "IA",
+                                  (States == 17 ) ~ "KS",
+                                  (States == 18 ) ~ "KY",
+                                  (States == 19 ) ~ "LA",
+                                  (States == 20 ) ~ "ME",
+                                  (States == 21 ) ~ "MD",
+                                  (States == 22 ) ~ "MA",
+                                  (States == 23 ) ~ "MI",
+                                  (States == 24 ) ~ "MN",
+                                  (States == 25 ) ~ "MS",
+                                  (States == 26 ) ~ "MO",
+                                  (States == 27 ) ~ "MT",
+                                  (States == 28 ) ~ "NE",
+                                  (States == 29 ) ~ "NV",
+                                  (States == 30 ) ~ "NH",
+                                  (States == 31 ) ~ "NJ",
+                                  (States == 32 ) ~ "NM",
+                                  (States == 33 ) ~ "NY",
+                                  (States == 34 ) ~ "NC",
+                                  (States == 35 ) ~ "ND",
+                                  (States == 36 ) ~ "OH",
+                                  (States == 37 ) ~ "OK",
+                                  (States == 38 ) ~ "OR",
+                                  (States == 39 ) ~ "PA",
+                                  (States == 40 ) ~ "RI",
+                                  (States == 41 ) ~ "SC",
+                                  (States == 42 ) ~ "SD",
+                                  (States == 43 ) ~ "TN",
+                                  (States == 44 ) ~ "TX",
+                                  (States == 45 ) ~ "UT",
+                                  (States == 46 ) ~ "VT",
+                                  (States == 47 ) ~ "VA",
+                                  (States == 48 ) ~ "WA",
+                                  (States == 49 ) ~ "WV",
+                                  (States == 50 ) ~ "WI",
+                                  (States == 51 ) ~ "WY"))
+
+#Wrangling to put age into category
+Adidas= Adidas%>% 
+       mutate(Age = case_when((Age >= 0 & Age <= 18) ~ 1,
+                                         (Age >= 19 & Age <= 29) ~ 2,
+                                         (Age >= 30 & Age <= 39) ~ 3,
+                                         (Age >= 40 ) ~ 4,
+                                          TRUE ~ 0)) 
+
+#Encoding region
+Adidas= Adidas%>% 
+       mutate(Region = case_when((Region == 1)~"Northeast",
+                                 (Region == 2)~"Midwsest",
+                                (Region == 3)~"South",
+                                (Region == 4)~"West",
+                                TRUE ~ "Other"))
+```
+
+```{r}
+#Data Wrangling for New Balance Survey Data
+#Encoding states to 2 letters
+NB= NB%>% 
+       mutate(States = case_when((States == 1) ~ "AL",
+                                  (States == 2) ~ "AK",(States == 3) ~ "AZ",
+                                  (States == 4) ~ "AR",
+                                  (States == 5) ~ "CA",
+                                  (States == 6 ) ~ "CO",
+                                  (States == 7 ) ~ "CT",
+                                  (States == 8 ) ~ "DE",
+                                  (States == 9 ) ~ "DC",
+                                  (States == 10 ) ~ "FL",
+                                  (States == 11 ) ~ "GA",
+                                  (States == 12 ) ~ "HI",
+                                  (States == 13 ) ~ "ID",
+                                  (States == 14 ) ~ "IL",
+                                  (States == 15 ) ~ "IN",
+                                  (States == 16 ) ~ "IA",
+                                  (States == 17 ) ~ "KS",
+                                  (States == 18 ) ~ "KY",
+                                  (States == 19 ) ~ "LA",
+                                  (States == 20 ) ~ "ME",
+                                  (States == 21 ) ~ "MD",
+                                  (States == 22 ) ~ "MA",
+                                  (States == 23 ) ~ "MI",
+                                  (States == 24 ) ~ "MN",
+                                  (States == 25 ) ~ "MS",
+                                  (States == 26 ) ~ "MO",
+                                  (States == 27 ) ~ "MT",
+                                  (States == 28 ) ~ "NE",
+                                  (States == 29 ) ~ "NV",
+                                  (States == 30 ) ~ "NH",
+                                  (States == 31 ) ~ "NJ",
+                                  (States == 32 ) ~ "NM",
+                                  (States == 33 ) ~ "NY",
+                                  (States == 34 ) ~ "NC",
+                                  (States == 35 ) ~ "ND",
+                                  (States == 36 ) ~ "OH",
+                                  (States == 37 ) ~ "OK",
+                                  (States == 38 ) ~ "OR",
+                                  (States == 39 ) ~ "PA",
+                                  (States == 40 ) ~ "RI",
+                                  (States == 41 ) ~ "SC",
+                                  (States == 42 ) ~ "SD",
+                                  (States == 43 ) ~ "TN",
+                                  (States == 44 ) ~ "TX",
+                                  (States == 45 ) ~ "UT",
+                                  (States == 46 ) ~ "VT",
+                                  (States == 47 ) ~ "VA",
+                                  (States == 48 ) ~ "WA",
+                                  (States == 49 ) ~ "WV",
+                                  (States == 50 ) ~ "WI",
+                                  (States == 51 ) ~ "WY"))
+
+#Wrangling to put age into category
+NB= NB%>% 
+       mutate(Age = case_when((Age >= 0 & Age <= 18) ~ 1,
+                                         (Age >= 19 & Age <= 29) ~ 2,
+                                         (Age >= 30 & Age <= 39) ~ 3,
+                                         (Age >= 40 ) ~ 4,
+                                          TRUE ~ 0)) 
+
+#Encoding region
+NB= NB%>% 
+       mutate(Region = case_when((Region == 1)~"Northeast",
+                                 (Region == 2)~"Midwsest",
+                                (Region == 3)~"South",
+                                (Region == 4)~"West",
+                                TRUE ~ "Other"))
+```
+
+```{r}
+#Data Wrangling for Converse Survey Data
+#Encoding states to 2 letters
+Converse= Converse%>% 
+       mutate(States = case_when((States == 1) ~ "AL",
+                                  (States == 2) ~ "AK",(States == 3) ~ "AZ",
+                                  (States == 4) ~ "AR",
+                                  (States == 5) ~ "CA",
+                                  (States == 6 ) ~ "CO",
+                                  (States == 7 ) ~ "CT",
+                                  (States == 8 ) ~ "DE",
+                                  (States == 9 ) ~ "DC",
+                                  (States == 10 ) ~ "FL",
+                                  (States == 11 ) ~ "GA",
+                                  (States == 12 ) ~ "HI",
+                                  (States == 13 ) ~ "ID",
+                                  (States == 14 ) ~ "IL",
+                                  (States == 15 ) ~ "IN",
+                                  (States == 16 ) ~ "IA",
+                                  (States == 17 ) ~ "KS",
+                                  (States == 18 ) ~ "KY",
+                                  (States == 19 ) ~ "LA",
+                                  (States == 20 ) ~ "ME",
+                                  (States == 21 ) ~ "MD",
+                                  (States == 22 ) ~ "MA",
+                                  (States == 23 ) ~ "MI",
+                                  (States == 24 ) ~ "MN",
+                                  (States == 25 ) ~ "MS",
+                                  (States == 26 ) ~ "MO",
+                                  (States == 27 ) ~ "MT",
+                                  (States == 28 ) ~ "NE",
+                                  (States == 29 ) ~ "NV",
+                                  (States == 30 ) ~ "NH",
+                                  (States == 31 ) ~ "NJ",
+                                  (States == 32 ) ~ "NM",
+                                  (States == 33 ) ~ "NY",
+                                  (States == 34 ) ~ "NC",
+                                  (States == 35 ) ~ "ND",
+                                  (States == 36 ) ~ "OH",
+                                  (States == 37 ) ~ "OK",
+                                  (States == 38 ) ~ "OR",
+                                  (States == 39 ) ~ "PA",
+                                  (States == 40 ) ~ "RI",
+                                  (States == 41 ) ~ "SC",
+                                  (States == 42 ) ~ "SD",
+                                  (States == 43 ) ~ "TN",
+                                  (States == 44 ) ~ "TX",
+                                  (States == 45 ) ~ "UT",
+                                  (States == 46 ) ~ "VT",
+                                  (States == 47 ) ~ "VA",
+                                  (States == 48 ) ~ "WA",
+                                  (States == 49 ) ~ "WV",
+                                  (States == 50 ) ~ "WI",
+                                  (States == 51 ) ~ "WY"))
+
+#Wrangling to put age into category
+Converse= Converse%>% 
+       mutate(Age = case_when((Age >= 0 & Age <= 18) ~ 1,
+                                         (Age >= 19 & Age <= 29) ~ 2,
+                                         (Age >= 30 & Age <= 39) ~ 3,
+                                         (Age >= 40 ) ~ 4,
+                                          TRUE ~ 0)) 
+
+#Encoding region
+Converse= Converse%>% 
+       mutate(Region = case_when((Region == 1)~"Northeast",
+                                 (Region == 2)~"Midwsest",
+                                (Region == 3)~"South",
+                                (Region == 4)~"West",
+                                TRUE ~ "Other"))
+
+```
+
+```{r}
+#Data Wrangling for Reebok Survey Data
+#Encoding states to 2 letters
+Reebok= Reebok%>% 
+       mutate(States = case_when((States == 1) ~ "AL",
+                                  (States == 2) ~ "AK",(States == 3) ~ "AZ",
+                                  (States == 4) ~ "AR",
+                                  (States == 5) ~ "CA",
+                                  (States == 6 ) ~ "CO",
+                                  (States == 7 ) ~ "CT",
+                                  (States == 8 ) ~ "DE",
+                                  (States == 9 ) ~ "DC",
+                                  (States == 10 ) ~ "FL",
+                                  (States == 11 ) ~ "GA",
+                                  (States == 12 ) ~ "HI",
+                                  (States == 13 ) ~ "ID",
+                                  (States == 14 ) ~ "IL",
+                                  (States == 15 ) ~ "IN",
+                                  (States == 16 ) ~ "IA",
+                                  (States == 17 ) ~ "KS",
+                                  (States == 18 ) ~ "KY",
+                                  (States == 19 ) ~ "LA",
+                                  (States == 20 ) ~ "ME",
+                                  (States == 21 ) ~ "MD",
+                                  (States == 22 ) ~ "MA",
+                                  (States == 23 ) ~ "MI",
+                                  (States == 24 ) ~ "MN",
+                                  (States == 25 ) ~ "MS",
+                                  (States == 26 ) ~ "MO",
+                                  (States == 27 ) ~ "MT",
+                                  (States == 28 ) ~ "NE",
+                                  (States == 29 ) ~ "NV",
+                                  (States == 30 ) ~ "NH",
+                                  (States == 31 ) ~ "NJ",
+                                  (States == 32 ) ~ "NM",
+                                  (States == 33 ) ~ "NY",
+                                  (States == 34 ) ~ "NC",
+                                  (States == 35 ) ~ "ND",
+                                  (States == 36 ) ~ "OH",
+                                  (States == 37 ) ~ "OK",
+                                  (States == 38 ) ~ "OR",
+                                  (States == 39 ) ~ "PA",
+                                  (States == 40 ) ~ "RI",
+                                  (States == 41 ) ~ "SC",
+                                  (States == 42 ) ~ "SD",
+                                  (States == 43 ) ~ "TN",
+                                  (States == 44 ) ~ "TX",
+                                  (States == 45 ) ~ "UT",
+                                  (States == 46 ) ~ "VT",
+                                  (States == 47 ) ~ "VA",
+                                  (States == 48 ) ~ "WA",
+                                  (States == 49 ) ~ "WV",
+                                  (States == 50 ) ~ "WI",
+                                  (States == 51 ) ~ "WY"))
+
+#Wrangling to put age into category
+Reebok= Reebok%>% 
+       mutate(Age = case_when((Age >= 0 & Age <= 18) ~ 1,
+                                         (Age >= 19 & Age <= 29) ~ 2,
+                                         (Age >= 30 & Age <= 39) ~ 3,
+                                         (Age >= 40 ) ~ 4,
+                                          TRUE ~ 0)) 
+
+#Encoding region
+Reebok= Reebok%>% 
+       mutate(Region = case_when((Region == 1)~"Northeast",
+                                 (Region == 2)~"Midwsest",
+                                (Region == 3)~"South",
+                                (Region == 4)~"West",
+                                TRUE ~ "Other"))
+```
+
+```{r}
+#Dropping unneeded columns
+keep.col = c("Age", "Gender", "Region", "States")
+#Nike
+Nike_final = Nike[keep.col]
+#Adidas
+Adidas_final = Adidas[keep.col]
+#New Balance
+NB_final = NB[keep.col]
+#Converse
+Converse_final = Converse[keep.col]
+#Reebok
+Reebok_final = Reebok[keep.col]
+```
+
+```{r}
+#Exporting survey dataframe to proceed with post-stratifcation tables in Python
+#Nike
+write.csv(Nike_final,"/Users/davidliang/Downloads/Nike_Survey_Econded.csv", row.names = FALSE)
+#Adidas
+write.csv(Adidas_final,"/Users/davidliang/Downloads/Adidas_Survey_Econded.csv", row.names = FALSE)
+#New Balance
+write.csv(NB_final,"/Users/davidliang/Downloads/NB_Survey_Econded.csv", row.names = FALSE)
+#Converse
+write.csv(Converse_final,"/Users/davidliang/Downloads/Converse_Survey_Econded.csv", row.names = FALSE)
+#Reebok
+write.csv(Reebok_final,"/Users/davidliang/Downloads/Reebok_Survey_Econded.csv", row.names = FALSE)
+```
+
+```{r}
+#Reading in Post-startification tables for each brand
+#Nike
+Nike_PS = read_csv("Nike_PS.csv",show_col_types = FALSE)
+#Adidas
+Adidas_PS = read_csv("Adidas_PS.csv",show_col_types = FALSE)
+#New Balance
+NB_PS = read_csv("NB_PS.csv",show_col_types = FALSE)
+#Converse
+Converse_PS = read_csv("Converse_PS.csv",show_col_types = FALSE)
+#Reebok
+Reebok_PS = read_csv("Reebok_PS.csv",show_col_types = FALSE)
+```
+
+```{r}
+#Checking region values
+unique(Nike_PS$Region)
+```
+
+
+```{r}
+#Multilevel Regression - Nike
+library(lme4)
+Nike_reg = glmer(Pos ~ (1|Gender) + (1|Age) + (1|States) + (1|Region),nAGQ=0,
+                family=binomial(link="logit"),data=twitter_Nike)
+summary(Nike_reg)
+```
+
+```{r}
+#Multilevel Regression - Adidas
+Adidas_reg = glmer(Pos ~ (1|Gender) + (1|Age) + (1|States) + (1|Region),nAGQ=0,
+                family=binomial(link="logit"),data=twitter_Adidas)
+summary(Adidas_reg)
+```
+
+```{r}
+#Multilevel Regression - New Balance
+NB_reg = glmer(Pos ~ (1|Gender) + (1|Age) + (1|States) + (1|Region),nAGQ=0,
+                family=binomial(link="logit"),data=twitter_NB)
+summary(NB_reg)
+```
+
+```{r}
+#Multilevel Regression - Converse
+Converse_reg = glmer(Pos ~ (1|Gender) + (1|Age) + (1|States) + (1|Region),nAGQ=0,
+                family=binomial(link="logit"),data=twitter_Converse)
+summary(Converse_reg)
+```
+
+```{r}
+#Multilevel Regression - Reebok
+Reebok_reg = glmer(Pos ~ (1|Gender) + (1|Age) + (1|States) + (1|Region),nAGQ=0,
+                family=binomial(link="logit"),data=twitter_Reebok)
+summary(Reebok_reg)
+```
+
+```{r}
+#Producing sum of counts
+#Nike
+Nike_counting = Nike_PS%>%
+  group_by(States)%>%
+  summarize(Total = sum(Count))
+
+#Adidas
+Adidas_counting = Adidas_PS%>%
+  group_by(States)%>%
+  summarize(Total = sum(Count))
+
+#New Balance
+NB_counting = NB_PS%>%
+  group_by(States)%>%
+  summarize(Total = sum(Count))
+
+#Converse
+Converse_counting = Converse_PS%>%
+  group_by(States)%>%
+  summarize(Total = sum(Count))
+
+#Reebok
+Reebok_counting = Reebok_PS%>%
+  group_by(States)%>%
+  summarize(Total = sum(Count))
+```
+
+```{r}
+unique(twitter_Nike$Region)
+```
+```{r}
+unique(Nike_PS$Region)
+```
+
+```{r}
+#Joinning datasets
+#Nike
+Nike_PS = left_join(Nike_PS, Nike_counting, by = ("States" = "States"))
+#Adidas
+Adidas_PS = left_join(Adidas_PS, Adidas_counting, by = ("States" = "States"))
+#New Balance
+NB_PS = left_join(NB_PS, NB_counting, by = ("States" = "States"))
+#Converse
+Converse_PS = left_join(Converse_PS, Converse_counting, by = ("States" = "States"))
+#Reebok
+Reebok_PS = left_join(Reebok_PS, Reebok_counting, by = ("States" = "States"))
+```
+
+
+```{r}
+#Calculating weights
+#Nike
+Nike_PS = Nike_PS %>%
+  mutate(Percentage = Count/Total)
+
+#Adidas
+Adidas_PS = Adidas_PS %>%
+  mutate(Percentage = Count/Total)
+
+#New Balance
+NB_PS = NB_PS %>%
+  mutate(Percentage = Count/Total)
+
+#Converse
+Converse_PS = Converse_PS %>%
+  mutate(Percentage = Count/Total)
+
+#Reebok
+Reebok_PS = Reebok_PS %>%
+  mutate(Percentage = Count/Total)
+
+```
+
+```{r}
+#Post-Strat - Nike
+# 1. Predict
+Nike_PS$Prediction = predict(Nike_reg,newdata=Nike_PS,type="response",allow.new.levels=TRUE)
+
+# 2. Weight
+Nike_PS$Weight.Pred = Nike_PS$Prediction*Nike_PS$Percentage
+
+# 3. Post-stratify
+Nike_results = data.table(Nike_PS)[ , .(Estimate = sum(Weight.Pred)), by = .(States)]
+Nike_results
+```
+```{r}
+#Post-Strat - Adidas
+# 1. Predict
+Adidas_PS$Prediction = predict(Adidas_reg,newdata=Adidas_PS,type="response",allow.new.levels=TRUE)
+
+# 2. Weight
+Adidas_PS$Weight.Pred = Adidas_PS$Prediction*Adidas_PS$Percentage
+
+# 3. Post-stratify
+Adidas_results = data.table(Adidas_PS)[ , .(Estimate = sum(Weight.Pred)), by = .(States)]
+Adidas_results
+```
+```{r}
+#Post-Strat - New Balance
+# 1. Predict
+NB_PS$Prediction = predict(NB_reg,newdata=NB_PS,type="response",allow.new.levels=TRUE)
+
+# 2. Weight
+NB_PS$Weight.Pred = NB_PS$Prediction*NB_PS$Percentage
+
+# 3. Post-stratify
+NB_results = data.table(NB_PS)[ , .(Estimate = sum(Weight.Pred)), by = .(States)]
+NB_results
+```
+```{r}
+#Post-Strat - Converse
+# 1. Predict
+Converse_PS$Prediction = predict(Converse_reg,newdata=Converse_PS,type="response",allow.new.levels=TRUE)
+
+# 2. Weight
+Converse_PS$Weight.Pred = Converse_PS$Prediction*Converse_PS$Percentage
+
+# 3. Post-stratify
+Converse_results = data.table(Converse_PS)[ , .(Estimate = sum(Weight.Pred)), by = .(States)]
+Converse_results
+```
+```{r}
+#Post-Strat - Reebok
+# 1. Predict
+Reebok_PS$Prediction = predict(Reebok_reg,newdata=Reebok_PS,type="response",allow.new.levels=TRUE)
+
+# 2. Weight
+Reebok_PS$Weight.Pred = Reebok_PS$Prediction*Reebok_PS$Percentage
+
+# 3. Post-stratify
+Reebok_results = data.table(Reebok_PS)[ , .(Estimate = sum(Weight.Pred)), by = .(States)]
+Reebok_results
+```
+```{r}
+#Renaming columns for visualisation
+#Nike
+Nike_results = Nike_results%>%
+  rename(state=States)
+#Adidas
+Adidas_results = Adidas_results%>%
+  rename(state=States)
+#Converse
+Converse_results = Converse_results%>%
+  rename(state=States)
+#New Balance
+NB_results = NB_results%>%
+  rename(state=States)
+#Reebok
+Reebok_results = Reebok_results%>%
+  rename(state=States)
+```
+
+
+```{r}
+#Nike Visualisation
+plot_usmap(data = Nike_results, values = "Estimate", color = "red") + 
+  scale_fill_continuous(name = "Estimate", label = scales::comma) + 
+  theme(legend.position = "right")
+```
+
+```{r}
+#Adidas Visualisation
+plot_usmap(data = Adidas_results, values = "Estimate", color = "red") + 
+  scale_fill_continuous(name = "Estimate", label = scales::comma) + 
+  theme(legend.position = "right")
+```
+
+```{r}
+#New Balance Visualisation
+plot_usmap(data = NB_results, values = "Estimate", color = "red") + 
+  scale_fill_continuous(name = "Estimate", label = scales::comma) + 
+  theme(legend.position = "right")
+```
+
+```{r}
+#Converse
+plot_usmap(data = Converse_results, values = "Estimate", color = "red") + 
+  scale_fill_continuous(name = "Estimate", label = scales::comma) + 
+  theme(legend.position = "right")
+```
+
+```{r}
+#Reebok
+plot_usmap(data = Reebok_results, values = "Estimate", color = "red") + 
+  scale_fill_continuous(name = "Estimate", label = scales::comma) + 
+  theme(legend.position = "right")
+```
+
+```{r}
+#Checking the number of states available
+unique(Converse_PS$States)
+unique(twitter_Reebok$States)
+```
+
